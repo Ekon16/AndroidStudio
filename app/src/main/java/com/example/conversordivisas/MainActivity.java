@@ -87,8 +87,13 @@ public class MainActivity extends AppCompatActivity {
 
         respuestas.get(k).setText(correcta);
         respuestas.get(k+1).setText(falsa);
+        for (int i = 0; i < 3; i++) {
 
-        if (respuestas.get())
+            if (respuestas.get(i) == null){
+                respuestas.get(i).setText(falsa);
+            }
+        }
+
 
 
 
